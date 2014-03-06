@@ -1,0 +1,46 @@
+Completati, va rog, acest fisier intr-un editor Monospaced
+(de exemplu: vim, GEdit, nano, Kate, etc.)
+===============================================================================
+
+Nume si prenume:      Dimcica Tudor
+Grupa:                311CC
+Tema:                 Tema 3, Programarea Calculatoarelor
+Tema proiectului:     Tetris
+Versiunea de compilator:            gcc 4.6.1
+Dependente externe:	  Fisiere binare -- 3 fisiere ce contin layouturi pentru 
+challenge si unul pentru salvarea jocului.  
+
+===============================================================================
+A) Detalii de implementare, bonusuri implementate:
+
+Layoutul jocului de tetris e reprezentat de o matrice. Matricea nu contine decat
+piese deja prabusite. Cele in miscare sunt construite pe baza cursorului
+bibliotecii ncurses si nu sunt reprezentate efectiv in matrice decat in momentul
+in care au intalnit un obstacol ce le va face sa se opreasca. Pentru miscarea si
+rotirea corecta a pieselor, am realizat functii care verifica existenta obstacolelor
+in jos, in lateral sau oriunde in jurul pieselor si care ar putea obstructiona
+rotirea acestora. Jocul se termina odata ce pe prima linie se gaseste o bucata de
+piesa. In timpul jocului se poate pune pauza, apasand tasta P, sau se poate salva
+jocul, apasand tasta S (in momentul salvarii jocului, va aparea pentru cateva secunde
+in dreapta ecranului mesajul "JOC SALVAT") sau se poate iesi direct din joc apasand
+tasta Q. Meniul principal permite inceperea unui joc nou, alegerea nivelului de start, 
+incarcarea unui joc salvat anterior precum si alegerea modului Challenge in care
+se poate juca incepand de la 3 layouturi preconfigurate. 
+
+                                      
+
+===============================================================================
+B) Feedback organizatoric pentru propunator:
+
+Timp aproximativ de rezolvare:      aprox. 15 ore  (in ore)
+Gradul de dificultate (1 = simplu)  8  (max. 10)
+
+Sugestii, pareri, comentarii, propuneri:
+
+Pot sa spun ca mi-a facut o placere deosebita sa fac Tetrisul. Foarte misto
+ideea proiectului de a face un joc ( chiar daca doar in C, si chiar daca prin
+rularea lui procesorul e tinut la 100% :) ). Consider ca, din cauza alocarii
+defectuoase a timpului, nu am avut timpul necesar sa fac si sa implementez tot
+ceea ce mi-am dorit. Cu toate asta, cred ca am facut un joc functional, care sa
+imi permita atingerea scopului initial, acela de a intra in Hall of Fame :P.
+Salutare!
